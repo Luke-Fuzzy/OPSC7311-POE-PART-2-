@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Calender section -->
+        <TextView
+            android:id="@+id/calendar_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Calendar"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <CalendarView
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calendar_heading"
+            android:layout_marginTop="16dp"
+            android:background="@color/white" />
+
+        <!-- Timer section -->
+        <TextView
+            android:id="@+id/timer_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calendar_view"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Timer"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timer_heading"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Buttons section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chronometer"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/btnPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2E0854"
+                android:text="Points"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btnPaidTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2E0854"
+                android:text="Paid Time"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btnReports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2E0854"
+                android:text="Reports"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btnTimeSheetEntries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Timesheet Entries" />
+
+            <Button
+                android:id="@+id/btnAlarms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2E0854"
+                android:text="Set Goals"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/btnProjects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2E0854"
+                android:text="Manage Projects"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/btnExports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2E0854"
+                android:text="Export"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2E0854"
+                android:text="Settings"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- Current Points section -->
+    <TextView
+        android:id="@+id/current_points_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Points"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/current_points_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1567"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:layout_below="@id/current_points_heading"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/rewards_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rewards"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:backgroundTint="#2E0854"
+        android:layout_below="@id/current_points_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/leaderboards_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leaderboards"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:backgroundTint="#2E0854"
+        android:layout_below="@id/rewards_button"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+</RelativeLayout>

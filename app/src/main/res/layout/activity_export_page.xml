@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/export_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Export Files"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/export_files_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/export_heading"
+        android:layout_marginTop="20dp"
+        android:text="Files:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/export_files_heading"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/file_1_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="File 1"
+                android:textColor="#FFFFFF" />
+
+            <CheckBox
+                android:id="@+id/file_2_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="File 2"
+                android:textColor="#FFFFFF" />
+
+            <CheckBox
+                android:id="@+id/file_3_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="File 3"
+                android:textColor="#FFFFFF" />
+
+            <CheckBox
+                android:id="@+id/file_4_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="File 4"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/export_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/export_files_heading"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#6F42C1"
+                android:text="Export"
+
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
